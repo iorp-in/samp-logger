@@ -1,0 +1,15 @@
+[package]
+name = "samp_logger"
+version = "20.12.14"
+authors = ["Harry_James <indianoceanroleplay@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "samp_logger"
+crate-type = ["dylib"]
+
+[dependencies]
+chrono = "*"
+fern = "*"
+log = "*"
+samp = {git="https://github.com/ZOTTCE/samp-rs/",branch="potential-fix",features = ["encoding"]}
